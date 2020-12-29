@@ -1,0 +1,2 @@
+# darrens2k.pythonquotesite
+The first website I ever built, using a Flask framework in Python, HTML and inline CSS. Please note that the HTML is sloppy and inline CSS was used because at the time I built this I had no formal education in programming and this was simply using things I had taught myself. This website can be accessed at darrens7.pythonanywhere.com as of now. The quotes used in the website were taken from www.goodreads.com using a websracper built through selenium in Python. 
