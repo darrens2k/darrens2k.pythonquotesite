@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Qoutez For Angel</title>
+    <style>
+        body {
+        font-family: sans-serif;
+        background-image: radial-gradient(#212121 20%, transparent 20%),
+            radial-gradient(black 20%, transparent 20%);
+        background-color: #e53935;
+        background-position: 0 0, 50px 50px;
+        background-size: 100px 100px;
+        height: 200px;
+        width: 99%
+        text-align: center;
+        }
+    </style>
+</head>
+<body text="AliceBlue">
+    <main>
+        <br/>
+        <h1><center><big><i>Quotez for Angel</i></big></center></h1>
+        <section>
+            <br/><hr/>
+            <form action="/" method="POST">
+                <h2><center><b><i>Enter your code: </i></b>
+                <input style="height:22px; border: 1px solid black;" type="text" name="code" /></center></h2>
+            </form>
+        </section>
+        <section style="text-align: center">
+            <p><b>Random Code Generator (note: enter the instructions code to activate):  {{ random_num }} </b></p>
+            <hr/>
+        </section>
+        <section>
+            <p><center><b><big><i>Enter code "2910" for instructions</i></big></b></center></p>
+        </section>
+        <section style="text-align: center">
+            <h2 style="border: 3px AliceBlue dashed"><i> {{ quote }} </i></h2>
+        </section>
+    </main>
+    <footer><center><b>The credit for all quotes goes to www.goodreads.com</b></center></footer>
+</body>
+</html>
